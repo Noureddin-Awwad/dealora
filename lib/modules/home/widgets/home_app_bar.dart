@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DealoraAppBar extends StatelessWidget implements PreferredSizeWidget {
   final int favoritesCount;
@@ -27,7 +28,7 @@ class DealoraAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           icon: const Icon(Icons.search, color: Colors.black),
-          onPressed: () {},
+          onPressed: () => Get.toNamed('/search'),
         ),
         _buildBadge(
           icon: Icons.favorite_border,
